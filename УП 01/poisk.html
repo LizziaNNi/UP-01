@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">
+       <img src="med/logo.png" class="logo"><a class="logo11" href="index.html">FlightPool</a>
+   </a>
+   <div class="navigator">
+       <a href="#down">
+           <p class="promo">Акции</p>
+       </a>
+       <a href="register.html">
+           <p class="register">Регистрация</p>
+       </a>
+       <a href="login.html">
+           <p class="profile">Войти</p>
+       </a>
+       <a href="profile.html">
+           <p class="profile">Профиль</p>
+       </a>
+   </div>
+   
+  <div class="rezul">
+      Результат поиска:
+  </div>
+  
+  <div class="bron">
+    Доступные рейсы
+     <div class="reisi">
+       <p class="resT">
+        Рейс №58 <br><br><br> Судно: Победа
+       </p>
+       <p class="resTcent">
+           Вылет: Москва , 13 мая в 0:30.Аэропорт:Домодедово<br><br>
+           В пути: 4 часа.<br><br>
+           Прилет: Новосибирск, 13 мая в 4:30. Аэропорт: Толмачёво. Цена билета:11000
+       </p>
+      <button id="ton" class="brton" onclick="document.location='broni.html'">Забронировать</button>
+      <input type="image" id="button" name="img" src="heartblack.png" width="50" />
+    <script> document.getElementById("button").addEventListener("click", function(){
+        var path;
+        if(this.getAttribute("src") === "heartblack.png")
+            path = "heartred.png";
+        else
+            path = "heartblack.png";
+        this.setAttribute("src", path);
+    }); </script>
+     </div>
+ </div>
+ <div class="reisi2">
+  
+  <p class="resT">
+   Рейс №69 <br><br><br> Судно: Аэрофлот
+  </p>
+  <p class="resTcent1">
+      Вылет: Москва, 15 мая в 8:30.Аэропорт:Домодедово<br><br>
+      В пути: 3 час 30 минут.<br><br>
+      Прилет:Новосибирск, 15 мая в 12:00. Аэропорт: Толмачёво. Цена билета:12000
+  </p>
+ <button id="ton1" class="brton1" onclick="document.location='broni.html'">Забронировать</button>
+ <input type="image" id="button1" name="img" src="heartblack.png" width="50" />
+ <script> document.getElementById("button1").addEventListener("click", function(){
+  var path;
+  if(this.getAttribute("src") === "heartblack.png")
+      path = "heartred.png";
+  else
+      path = "heartblack.png";
+  this.setAttribute("src", path);
+}); </script>
+</div>
+<div class="reisi3">
+  <p class="resT">
+   Рейс №69 <br><br><br> Судно: TenS
+  </p>
+  <p class="resTcent1">
+      Вылет: Москва, 17 мая в 10:30.Аэропорт:Домодедово<br><br>
+      В пути: 4 час 30 минут.<br><br>
+      Прилет: Новосибирск, 18 мая в 15:00. Аэропорт: Толмачево. Цена билета:10000
+  </p>
+ <button  id="ton2" class="brton1" onclick="document.location='broni.html'">Забронировать</button>
+ <input type="image" id="button2" name="img" src="heartblack.png" width="50" />
+ <script> document.getElementById("button2").addEventListener("click", function(){
+  var path;
+  if(this.getAttribute("src") === "heartblack.png")
+      path = "heartred.png";
+  else
+      path = "heartblack.png";
+  this.setAttribute("src", path);
+}); </script>
+</div>
+
+
+
+
+
+
+
+
+   <footer class="footer2">
+    <div class="conteiner">
+      <div class="footer-block">
+        <img src="med/logo.png" alt="" class="logofooter-logo" width="100px" height="100px">
+        <nav class="footer-nav">
+          <a href="index.html" class="footer-link">Домой</a>
+          <a href="login.html" class="footer-link">Войти</a>
+          <a href="register.html" class="footer-link">Регистрация</a>
+          <a href="index.html" class="footer-link">Контакты</a>
+          <a href="index.html" class="footer-link">Новости</a>
+          <a href="index.html#review" class="footer-link">Отзывы</a>
+        </nav>
+        <div class="social-links">
+        
+          <div class="test-0-phone social-link">
+            <p class="final">Связаться с нами:
+              8 (800) 100-10-10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

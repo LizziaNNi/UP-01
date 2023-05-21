@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="styles/js/simple-adaptive-slider.js"></script>
+     <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      var slider = new ItcSimpleSlider('.itcss', {
+        loop: true,
+        autoplay: true,
+        swipe: true
+      });
+    });
+  </script>
+  
+    <title>FlightPool</title>
+</head>
+<body>
+    <body>
+<div class="header">
+     <a href="index.html">
+    <img src="med/logo.png" class="logo"><a class="logo11" href="index.html">FlightPool</a>
+</a>
+<div class="navigator">
+    <a href="#down">
+        <p class="promo">Акции</p>
+    </a>
+    <a href="register.html">
+        <p class="register">Регистрация</p>
+    </a>
+    <a href="login.html">
+        <p class="profile">Войти</p>
+    </a>
+    <a href="profile.html">
+        <p class="profile">Профиль</p>
+    </a>
+</div>
+
+<div class="itcss">
+  <div class="itcss__wrapper">
+    <div class="itcss__items">
+      <div class="itcss__item">
+         <img src="med/images/aircrafts/1.jpg">
+      </div>
+      <div class="itcss__item">
+        <img src="med/images/aircrafts/2.jpg">
+      </div>
+      <div class="itcss__item">
+        <img src="med/images/aircrafts/3.jpg">
+      </div>
+      <div class="itcss__item">
+        <img src="med/images/aircrafts/4.jpg">
+      </div>
+      <div class="itcss__item">
+        <img src="med/images/aircrafts/1-2.jpg">
+      </div>
+    </div>
+  </div>
+  <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+  <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+</div>
+<div class="booking_div">
+        <p>Вы можете выбрать удобную дату перелета.</p>
+        <p>Накопить больше 50% бронирований на рейс.</p>
+        <p>Получить снижение стоимости.</p>
+    </div>
+    <a name="down"></a>
+    <div class="promotions1 ">
+        <div class=" promotion ">
+            <img src="med/images/promotions/promotion1.jpg" class="test-0-ai ">
+            <p>Возврат и обмен билетов</p>
+            <p>Пандемия изменила планы многих путешественников, но мы знаем, что она не будет длиться вечно.
+Как только все это закончится, мы продолжим исследовать этот мир так, как мы привыкли.
+Специальные правила, разработанные для этой сложной ситуации, помогут вам отменить поездку или отложить её на потом.</p>
+
+            <div class=" promotion1 ">
+                <img src="med/images/promotions/promotion2.jpg " class="test-0-ai ">
+            <p>Лучшие предложения</p>
+            <p>Снова увидеть улицы, которые так много видели. Обнять своих близких и оглянуться назад, чтобы увидеть, 
+через что вам пришлось пройти. И думать о новых мечтах, которые будут такими особенными!</p>
+<div class=" promotion2 ">
+    <img src="med/images/promotions/promotion3.jpg " class="test-0-ai ">
+            <p>Видеться чаще</p>
+            <p>С начала января мы расширяем географию полетов по России, чтобы вы могли
+чаще видитесь с близкими. Выбирайте нашу компанию, чтобы лететь туда, где вас всегда ждут.</p>
+<div class=" promotion3 ">
+            <img src="med/images/promotions/promotion4.jpg " class="test-0-ai ">
+            <p>Все снова включено</p>
+            <p>С 10 августа возобновим полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться дважды
+в день ежедневно, а рейсы по маршруту Москва-Даламан будут выполняться от трех до семи раз в неделю.
+</p>
+    </div>
+</div>
+<form>
+<div class=" subscribe_div ">
+    <p>Подписка на закрытые акции для вас.</p>
+        <input type="email" name="email" class="test-0-sie " placeholder="Введите свой email " required>
+        <input type="submit" class="test-0-sbs " value="Подписаться ">
+</div>
+</form>
+<div class="search-conteiner">
+  <form action="poisk.html">
+    <div class="items-text">
+    <p class="reisi1">Откуда</p>
+    <p class="data">Куда</p>
+    <p class="ot_doma">Убывающий рейс</p>
+    <p class="domoi">И обратно</p>
+    <p class="chelicki">Кол-во пассажиров</p>
+    </div>
+    <div class="items">
+        <select required class="test-0-fd ">
+        <option > Москва</option>
+        <option > Анкара</option>
+        <option > Стамбул</option>
+      </select>
+      </select>
+        <select required class="test-0-fa">
+        <option selected> Москва</option>
+        <option> Анкара</option>
+        <option> Стамбул</option>
+      </select>
+  <input required class="test-0-fdt" type="date" name="date"></li>
+  <input required class="test-0-fat" type="date" name="date"></li>
+  <select required class="test-0-fnp">
+  <option selected> 1</option>
+  <option> 2</option>
+  <option> 3</option>
+  <option> 4</option>
+  <option> 5</option>
+  <option> 6</option>
+  <option> 7</option>
+  <option> 8</option>
+  </select>
+  <a><input required value="Поиск" type="submit" name="submit" class="test-0-fbs" ></a>
+  </div>
+  </div>
+</form>
+</div>
+<p class="otzivT">Отзывы</div>
+<div class="otziv">
+  <div class="txtOT"> 
+    <div class="sharik"></div>
+    <img class="ava" src="img/ava.png"><p class="smsT">Пользователь</p>
+    Быстрый и удобный сервис! Мне очень понравилось 
+ </div>
+
+<div class="sms">
+ <div class="txtOT"> 
+    <div class="sharik"></div>
+    <img class="ava" src="img/ava.png"><p class="smsT">Пользователь</p>
+    Быстрый и удобный сервис! Мне очень понравилось 
+ </div>
+</div>
+<div class="sms">
+ <div class="txtOT"> 
+    <div class="sharik"></div>
+    <img class="ava" src="img/ava.png"><p class="smsT">Пользователь</p>
+    Быстрый и удобный сервис! Мне очень понравилось 
+ </div>
+</div>
+<div class="sms">
+ <div class="txtOT"> 
+    <div class="sharik"></div>
+    <img class="ava" src="img/ava.png"><p class="smsT">Пользователь</p>
+    Быстрый и удобный сервис! Мне очень понравилось 
+ </div>
+</div>
+<div class="sms">
+ <div class="txtOT"> 
+    <div class="sharik"></div>
+    <img class="ava" src="img/ava.png"><p class="smsT">Пользователь</p>
+    Быстрый и удобный сервис! Мне очень понравилось 
+ </div>
+</div>
+</div>
+        <footer class="footer">
+          <div class="conteiner">
+            <div class="footer-block">
+              <img src="med/logo.png" alt="" class="logofooter-logo" width="100px" height="100px">
+              <nav class="footer-nav">
+                <a href="index.html" class="footer-link">Домой</a>
+                <a href="login.html" class="footer-link">Войти</a>
+                <a href="register.html" class="footer-link">Регистрация</a>
+                <a href="index.html" class="footer-link">Контакты</a>
+                <a href="index.html" class="footer-link">Новости</a>
+                <a href="index.html#review" class="footer-link">Отзывы</a>
+              </nav>
+              <div class="social-links">
+              
+                <div class="test-0-phone social-link">
+                  <p class="final">Связаться с нами:
+                    8 (800) 100-10-10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+</body>
+</html>

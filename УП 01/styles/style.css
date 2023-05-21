@@ -1,0 +1,795 @@
+@font-face {
+    font-family: 'Montserrat'; 
+    src: url(fonts/Montserrat-SemiBold.ttf); 
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+body {
+   background-color: white;
+    font-family: 'Montserrat';
+    z-index: 0;
+
+}
+.header {
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.navigator {
+    margin-left:700px;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 40px;
+}
+.profile,
+.register,
+.promo,
+.search {
+   color:red;
+    margin-right: 15px;
+}
+.itcss {
+  position: relative;
+  overflow: hidden;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+/* стили для wrapper */
+.itcss__wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.itcss__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* класс для отключения transition */
+.transition-none {
+  transition: none;
+}
+
+/* стили для элементов */
+.itcss__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* кнопки Prev и Next */
+.itcss__control {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 50px;
+  transform: translateY(-50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.5;
+  user-select: none;
+}
+
+.itcss__control_show {
+  display: flex;
+}
+
+.itcss__control:hover,
+.itcss__control:focus {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.itcss__control_prev {
+  left: 0;
+}
+
+.itcss__control_next {
+  right: 0;
+}
+
+.itcss__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.itcss__control_prev::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.itcss__control_next::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Индикаторы */
+.itcss__indicators {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0 15%;
+  list-style: none;
+  user-select: none;
+}
+
+.itcss__indicator {
+  flex: 0 1 auto;
+  width: 30px;
+  height: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background-color: black;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  cursor: pointer;
+}
+
+.itcss__indicator_active {
+  background-color: red;
+}
+.booking_div {
+  color:white;
+    margin-top: 10px;
+    background: red;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.gg {
+    text-align: center;
+}
+.promotions1 {
+  
+    
+    padding: 20px;
+    display: flex;
+    
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 1850px;
+    height:  1000px;
+    margin-left: 0px;
+   
+  border-radius: 10px;
+}
+
+.promotion {
+   
+    text-align: center;
+    width: 555px;
+    height: 420px;
+    margin-left: -20px;
+    margin-top: -20px;
+    font-size: 15px;
+}
+.promotion1{
+  position: absolute;
+  
+  text-align: center;
+  width: 555px;
+  height: 420px;
+  margin-left: 660px;
+  margin-top: -429px;
+  font-size: 15px;
+}
+.promotion2{
+  position: absolute;
+
+  text-align: center;
+  width: 555px;
+  height: 420px;
+  margin-left: 670px;
+  margin-top: -376px;
+  font-size: 15px;
+}
+.promotion3{
+  position: absolute;
+  
+  text-align: center;
+  margin-left: -670px;
+  width: 555px;
+  height: 420px;
+  margin-top: 140px;
+  font-size: 15px;
+}
+.test-0-ai {
+    width: 350px;
+}
+.subscribe_div {
+  position: absolute;
+  margin-top: 1500px;
+  width: 550px;
+  margin: auto;
+  background: red;
+  border-radius: 10px;
+  border: 10px;
+
+  color:white ;
+}
+.test-0-sbs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    background-color: white;
+    border-color: white;
+    width: 176px;
+}
+.test-0-sie {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    background-color: white;
+    border: 0;
+    width: 176px;
+}
+.phone {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 550px;
+    margin: auto;
+    background: #f3e1ff;
+  border-radius: 10px;
+}
+.test-1-fbs {
+    font-family: 'Montserrat';
+    background-color: red;
+    border-color: red;
+    width: 176px;
+    margin-bottom: 10px;
+    margin-left: 350px;
+    color: white;
+}
+.input_label {
+    width: -200px;
+    color: red;
+}
+
+.register_table {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+
+.profile_div {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.test-3-name,
+.test-3-last {
+    margin-right: 3px;
+    margin-left: 2px;
+    font-size: 18px;
+}
+
+.test-3-num {
+    margin-top: -10px;
+    font-size: 18px;
+}
+.trust_div {
+    background: #ffece1;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+   
+}
+.search_table {
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.search_table tbody tr:nth-child(2n) {
+    background: white;
+}
+.test-3-code,
+.test-3-d1,
+.test-3-t1,
+.test-3-t2,
+.test-3-from,
+.test-3-to {
+    width: 16%;
+}
+
+.test-3-logout {
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    background-color: #ffe1e1;
+    border-color: #ffb4b4;
+    width: 176px;
+    margin-bottom: 10px;
+}
+.search_div {
+    background: white;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+}
+.test-1-fpn,
+.test-1-fps,
+.test-2-name,
+.test-2-last,
+.test-2-doc,
+.test-2-phone,
+.test-2-pass,
+.test-2-pass2,
+.test-2-btn {
+    font-family: 'Montserrat';
+    width: 150px;
+}
+.test-2-btn {
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    background-color: #e9ffe1;
+    border-color: red;
+    background-color: red;
+    color: white;
+    width: 176px;
+    margin-bottom: 10px;
+    
+    
+}
+.logo{
+  position:absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  background-color: whitef;
+  z-index: 1;
+}
+.footer{
+	padding: 60px 0px;
+	background: white;
+	position: absolute;
+	width: 2000px;
+  margin-top: 1200px;
+  margin-left: 00px;
+}
+.footer1{
+  font-size: 20px;
+	padding: 60px 0px;
+	background: white;
+	position: absolute;
+	width: 100%;
+	margin-top: 100px;
+}
+.footer-block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-link{
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+}
+.footer-nav {
+  margin: auto;
+  word-spacing: 20px;
+}
+.footer-logo{
+	margin-left: 125px;
+}
+.social-links{
+	word-spacing: 20px;
+	margin-right: 125px;
+}
+.test-0-phone{
+	word-spacing: 0px;
+	margin-top: 10px;
+}
+.conteiner{
+	max-width: 1200px;
+	margin: auto;
+	position: relative;
+	height: 100%;
+}
+.logofooter-logo{
+   position: absolute;
+   margin-left: -350px;
+   width: 150px;
+   height: 150px;
+}
+.otzivT{
+  position: absolute;
+  color:red;
+  font-size: 35px;
+  margin-left: 1550px;
+  margin-top: 150px;
+}
+.otziv{
+  overflow: scroll;
+  width: 500px;
+  height: 500px;
+  border:2px solid red;
+ position: absolute;
+ margin-top: 600px;
+ margin-left: 1350px;
+ background-image: url(../med/images/fon.jpg);
+}
+.reisi1{
+  margin-left: 20px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:red;
+}
+.ot_doma{
+  margin-left: 140px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.domoi{
+  margin-left: 50px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.chelicki{
+  margin-left: 100px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.search-conteiner{
+  display: flex;
+  
+  border:solid grey 2px;
+  box-shadow:10px 5px 5px red ;
+  margin-top: 600px;
+  margin-left: -600px;
+  border-radius: 15px;
+background-color:   white ;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  background-image: url(../Media/calendar.png);
+  width: 25px;
+  height: 25px;
+}
+option{
+  background-color: grey;
+  width: 222px;
+  height: 40px;
+}
+.test-0-fd{
+margin-left: 10px;
+width: 150px;
+height: 50px;
+border-radius: 15px;
+box-shadow: 10px 5px 5px grey;
+      font-size: 24px;
+      border: solid red 3px;
+
+}
+.test-0-fa{
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 150px;
+height: 50px;
+border-radius: 15px;
+box-shadow: 10px 5px 5px grey;
+      font-size: 24px;
+      border: solid red 3px;
+
+}
+.items{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.test-0-fdt{
+   display: inline-block;
+   margin-left: 20px;
+   margin-bottom: 10px;
+   width: 150px; 
+   height: 50px;
+   border-radius: 15px;
+   box-shadow: 10px 5px 5px grey;
+      font-size: 24px;
+      border: solid red 3px;
+
+}
+.test-0-fat{
+   margin-left: 20px;
+   margin-bottom: 20px;
+   width: 150px;
+   height: 50px;
+   border-radius: 15px;
+   box-shadow: 10px 5px 5px grey;
+      font-size: 24px;
+      border: solid red 3px;
+
+}
+.items-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.data{
+  margin-left: 110px;
+  margin-top: 10px;
+}
+.test-0-fnp {
+  margin-left: 20px;
+   margin-bottom: 20px;
+   width: 150px;
+   height: 50px;
+   border-radius: 15px;
+   font-size: 24px;
+   box-shadow: 10px 5px 5px grey;
+      font-size: 24px;
+      border: solid red 3px;
+
+}
+.test-0-fbs{
+   margin-left: 20px;
+   margin-bottom: 20px;
+   width: 150px;
+   height: 50px;
+     border-radius: 15px;
+     background-color: white;
+     box-shadow: 10px 5px 5px grey;
+      font-size: 24px;
+}
+.final{
+  
+  color: red;
+}
+.test-2-btn{
+  margin-left: 855px;
+}
+.subscribe_div1{
+  box-shadow: 3px 3px 3px 3px grey;
+  position: absolute;
+  margin-top: 50px;
+  width: 800px;
+  margin-left: 550px;
+  background: white;
+  color:red;
+}
+.booking_div1{
+    color:red;
+    margin-top: 10px;
+    background: white;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.rezul{
+  width: 1200px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 350px; 
+}
+.trust_div1{
+  background: #ffece1;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.06);
+  margin-bottom: 10px;
+  margin-top: 200px;
+}
+.bron{
+  position: absolute;
+  width: 1900px;
+  height: 50px;
+  background-color: red;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  margin-left: 00px;
+  z-index: 1;
+}
+.reisi{
+  position: absolute;
+  width: 1400px;
+  height: 150px;
+  background-color:rgb(247, 220, 185);
+  color:black;
+  z-index: 0;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+.resT{
+  
+  text-align: center;
+  margin-left: 50px;
+  border-right: 2px solid black;
+  width: 200px;
+  height: 150px;
+  font-size: 25px;
+  margin-top: 0px; 
+}
+.resTcent{
+  position: absolute;
+  border-right:2px solid black;
+  width: 1000px;
+  height: 150px;
+  margin-top: -175px;
+  margin-left: 250px;
+  font-size: 20px;
+}
+.brton{
+  position: absolute;
+  border-radius: 25%;
+  background-color:rgb(182, 178, 178);
+  border-color:rgb(182, 178, 178);
+  color: white;
+  height: 50px;
+  margin-left: 575px;
+  margin-top: -80px;
+}
+.heart{
+position: absolute;
+width: 50px;
+height: 50px;
+}
+.F{
+  margin-left: -3px;
+  width: 40px;
+  height: 40px;
+}
+#button{
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -170px;
+}
+.reisi2{
+  position: absolute;
+  width: 1400px;
+  height: 150px;
+  background-color:rgb(247, 220, 185);
+  color:black;
+  z-index: 0;
+  margin-left: 250px;
+  margin-top: 350px;
+  z-index: 0;
+}
+.resTcent1{
+  position: absolute;
+  border-right:2px solid black;
+  width: 1000px;
+  height: 150px;
+  margin-top: -175px;
+  margin-left: 250px;
+  font-size: 20px;
+  z-index: 1;
+  text-align: center;
+}
+.brton1{
+  position: absolute;
+  border-radius: 25%;
+  background-color:rgb(182, 178, 178);
+  border-color:rgb(182, 178, 178);
+  color: white;
+  height: 50px;
+  margin-left: 1275px;
+  margin-top: -80px;
+  z-index: 0;
+}
+#button1{
+  position: absolute;
+  margin-left: 1300px;
+  margin-top: -170px;
+}
+.reisi3{
+  position: absolute;
+  width: 1400px;
+  height: 150px;
+  background-color:rgb(247, 220, 185);
+  color:black;
+  z-index: 0;
+  margin-left: 250px;
+  margin-top: 510px;
+  z-index: 0;
+  
+}
+#button2{
+  position: absolute;
+  margin-left: 1300px;
+  margin-top: -170px;
+}
+.footer2{ 
+
+position: absolute;
+width: 1900px;
+  margin-top: 855px;
+  margin-left: 0px;
+  
+}
+.brTT{
+  font-size: 20px;
+  position: absolute;
+  margin-left: 1280px;
+  margin-top: 50px;
+}
+.brTT1{
+  font-size: 20px;
+  position: absolute;
+  margin-left: 1280px;
+  margin-top: 70px;
+}
+.brTT2{
+  font-size: 20px;
+  position: absolute;
+  margin-left: 1280px;
+  margin-top: 80px;
+  
+}
+.opl1{
+  position: absolute;
+  text-align: center;
+  background-color: rgb(247, 220, 185);
+  width: 900px;
+  height: 1200px;
+  margin-left: 500px;
+  margin-top: 80px;
+  font-size: 25px;
+}
+.logo11{
+  position: absolute;
+  color: red;
+  margin-left: 150px;
+  margin-top: 0px;
+  font-size: 25px;
+}
+.txtOT{
+  position: inherit;
+  background-color: white;
+  width: 250px;
+  height:150px;
+  border-radius: 15%;
+  margin-top: 30px;
+  }
+  .sharik{
+      border:2px solid black;
+      border-radius: 90%;
+      width: 40px;
+      height: 40px;
+      margin-left: 20px;
+  }
+  .ava{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-top: -41px;
+      margin-left: 22px;
+  }
